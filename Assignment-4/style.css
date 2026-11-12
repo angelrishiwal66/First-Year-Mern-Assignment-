@@ -1,0 +1,103 @@
+body {
+    background-color: lavender;
+    color: black;
+}
+
+h1 {
+    color: blueviolet;
+}
+:root {
+    /* Colour variables */
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --background-color: #f8fafc;
+    --text-color: #334155;
+    --white-color: #ffffff;
+
+    /* Font sizes */
+    --heading-size: 32px;
+    --subheading-size: 22px;
+    --normal-size: 16px;
+
+    /* Spacing */
+    --small-space: 10px;
+    --medium-space: 20px;
+    --large-space: 40px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+/* Element Selector */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Heading styling */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: var(--large-space);
+}
+
+/* Class Selector */
+.section {
+    background-color: var(--white-color);
+    margin: var(--medium-space);
+    padding: var(--large-space);
+    border-radius: 12px;
+}
+
+/* ID Selector */
+#projects {
+    border-left: 5px solid var(--primary-color);
+}
+
+/* Descendant Selector */
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    padding: var(--medium-space);
+    background-color: var(--white-color);
+}
+
+/* Pseudo-class Selector */
+nav a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Section headings */
+.section h2 {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: var(--medium-space);
+}
