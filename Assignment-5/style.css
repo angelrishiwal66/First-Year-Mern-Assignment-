@@ -1,0 +1,349 @@
+/* Basic CSS */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf3;
+    color: #3b2418;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #3b2418;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+section {
+    padding: 40px;
+    margin: 20px;
+}
+/* Hero Section */
+
+.hero {
+    position: relative;
+    height: 500px;
+
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Hero Content */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    color: white;
+    padding-top: 120px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+
+    background-color: #c58b50;
+    color: white;
+
+    padding: 12px 25px;
+    margin-top: 15px;
+
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: #8b5e34;
+}
+/* About Section */
+
+.about {
+    background-color: #f1e3d3;
+
+    padding: 40px;
+    margin: 30px;
+
+    border-radius: 15px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #6f4226;
+    font-size: 30px;
+}
+
+/* Services Section */
+
+.services {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Common Card Styling */
+
+.card {
+    display: inline-block;
+
+    width: 25%;
+    vertical-align: top;
+
+    padding: 20px;
+    margin: 15px;
+
+    box-sizing: border-box;
+}
+
+/* Card 1 */
+
+.card-one {
+    background-color: #ead5bd;
+    border: 2px solid #b77b4b;
+    border-radius: 10px;
+}
+
+/* Card 2 */
+
+.card-two {
+    background-color: #fff0d9;
+    border: 2px dashed #9b6841;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Card 3 */
+
+.card-three {
+    background-color: #d9c3aa;
+    border: 2px solid #6f4226;
+    border-radius: 5px 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #6f4226;
+}
+/* Gallery Section */
+
+.gallery {
+    text-align: center;
+    padding: 30px;
+}
+
+.gallery-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-box img {
+    width: 28%;
+    height: 220px;
+
+    object-fit: cover;
+
+    margin: 10px;
+    padding: 5px;
+
+    border: 2px solid #b77b4b;
+    border-radius: 12px;
+}
+
+/* Image Hover Effect */
+
+.gallery-box img:hover {
+    border-color: #6f4226;
+    opacity: 0.8;
+}
+/* Contact Section */
+
+.contact {
+    background-color: #f1e3d3;
+
+    padding: 40px;
+    margin: 30px;
+
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Contact Form */
+
+.contact form {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 8px;
+
+    border: 1px solid #b77b4b;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.contact button {
+    background-color: #6f4226;
+    color: white;
+
+    padding: 12px 25px;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #b77b4b;
+}
+/* Footer */
+
+.footer {
+    background-color: #3b2418;
+    color: white;
+
+    text-align: center;
+    padding: 30px;
+
+    margin-top: 30px;
+}
+
+.footer-links a {
+    color: #f1e3d3;
+
+    text-decoration: none;
+    margin: 10px;
+}
+
+.footer-links a:hover {
+    color: #c58b50;
+    text-decoration: underline;
+}
+/* Responsive Design */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+    header {
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        margin-top: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+        display: inline-block;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 42%;
+    }
+
+    .gallery img {
+        width: 42%;
+    }
+
+    .contact form {
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 6px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        padding: 120px 15px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .gallery img {
+        width: 90%;
+        height: 200px;
+    }
+
+    .contact form {
+        width: 95%;
+        padding: 20px;
+    }
+}
