@@ -1,0 +1,129 @@
+:root {
+            --primary: #183b63;
+            --header: #c7d9ed;
+            --secondary: #eaf1f8;
+            --border: #555;
+            --lab: #bdbdbd;
+            --break: #f8e6b7;
+            --hover: #ffe0ad;
+            --spacing: 9px;
+            --font-size: 13px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+        }
+
+        .details {
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 1100px;
+            border-collapse: collapse;
+            background: white;
+            font-size: var(--font-size);
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--primary);
+            padding: 15px;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: var(--spacing);
+            text-align: center;
+        }
+
+        thead {
+            background: var(--header);
+            color: var(--primary);
+        }
+
+        tbody tr:nth-child(even) {
+            background: var(--secondary);
+        }
+
+        tbody tr:hover {
+            background: var(--hover);
+        }
+
+        .day {
+            background: var(--header);
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .lab {
+            background: var(--lab) !important;
+            font-weight: bold;
+        }
+
+        .break {
+            background: var(--break);
+            font-weight: bold;
+        }
+
+        .free {
+            color: #777;
+            font-style: italic;
+        }
+
+        .time {
+            white-space: nowrap;
+        }
+
+        tfoot {
+            background: var(--header);
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .table-container {
+                overflow: visible;
+            }
+
+            table {
+                min-width: 0;
+                font-size: 9px;
+            }
+
+            th, td {
+                padding: 4px;
+            }
+
+            tbody tr:hover {
+                background: inherit;
+            }
+        }
